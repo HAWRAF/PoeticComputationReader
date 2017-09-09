@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body id="highlight-page" class="highlight-page">
+		{% include loading.html %}
+
+    {% include highlightsheader.html %}
+
+		
+
+    <div>
+      <div id="container" class="container group hidefocus">
+        <div class="main">	        
+        	<div class="highlight-header">
+        		<h6 class="highlight-mini">Highlighted Excerpts from</h6>
+        		<h1 class="chapter-heading">Poetics of Computation</h1>
+        		<h3 class="sub-title">Taeyoon Choi</h3>
+        	</div>
+          {% assign chapters = site.chapters %}
+          {% assign currentPage = 1 %}
+          {% for chapter in chapters %}
+            {% if chapter.page == 1 and chapter.active == true %}
+		          
+
+	            <div class="highlight-section-wrapper {% if chapter.chapter == 1 %} first {% endif %}">
+	            	<h1 class="sub-title">Chapt. 0{{ chapter.chapter }}</h1>
+	            	<div class="chapter-title-line"></div>
+	            	<h1 id="chapter-title-{{currentPage}}" class="sub-title">{{chapter.title}}</h1>
+
+	            	<div id="chapter-{{chapter.chapter}}">
+	            		
+	            	</div>
+	            </div>
+	            {% assign currentPage = currentPage | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+        </div>
+    </div>
+  </div>
+
+  <script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+	<script src="/scripts/storage.js"></script>
+	<script src="/scripts/pdfmake.min.js"></script>
+	<script src="/scripts/vfs_fonts.js"></script>
+	<script>
+		var storage = Storages.localStorage
+		var $wrappers = $('.highlight-section-wrapper');
+		var $exportHighlights = $("#export-highlights");
+
+
+		var parsedHighlights = {}
+
+		appendHighlights()
+		$(window).on("load", function() {
+			$("#loading").fadeOut()
+		})
+
+
+
+		function appendHighlights() {
+			var highlightText = storage.get('settings.highlightText');
+
+			for (var j = 0; j < highlightText.length; j++) {
+				var chapterHighlights = highlightText[j];
+				var $currentSection = $("#chapter-" + (j));
+				
+				if (chapterHighlights && chapterHighlights.length > 0){
+					var trueFalse = getUniqueHighlights(chapterHighlights);
+					parsedHighlights[j] = [];
+					
+					for (var i = 0; i < chapterHighlights.length; i++) {
+						if (trueFalse[i]) {
+							var text = chapterHighlights[i]
+							parsedHighlights[j].push(text)
+							$currentSection.append("<p class='highlight-text body-text'>" +  text + "</p>")
+						}
+					}
+				} else {
+					$currentSection.append("<p class='highlight-text body-text'> There doesn't seem to be anything here.</p>")
+				}
+			}
+		}
+
+		function getUniqueHighlights(a) {
+			var out = {};
+			for (var i = 0; i < a.length; i++) {
+				out[i] = true;
+				for (var j = 0; j < a.length; j++) {
+					if (i !== j) {
+						if (a[i].indexOf(a[j]) !== -1) {
+							out[j] = false;
+						} 
+					}
+				}
+			}
+			return out
+		}
+
+		var styles =  {
+			header: {
+				fontSize: 32,
+				margin: [0, 200, 0, 20],
+			},
+
+			body: {
+				fontSize: 16,
+				margin: [0, 40, 0, 40],
+
+			}
+		}
+
+		$exportHighlights.click(exportHighlights)
+
+		function exportHighlights() {
+			var content = [];
+			var firstLoop = true;
+			for (var key in parsedHighlights) {
+				if (firstLoop) {
+					firstLoop = !firstLoop;
+					var margin = [0, 20, 0, 20]
+				} else {
+					var margin = [0, 200, 0, 20]
+				}
+				var currentChapter = parsedHighlights[key];
+				var $title = $("#chapter-title-" + key);
+				content.push({text: $title.text(), style: 'header', margin: margin})
+
+				for (var i = 0; i < currentChapter.length; i++) {
+					content.push({text: currentChapter[i], style: 'body'})
+				}
+			}
+
+			pdfMake.fonts = {
+        Roboto: {
+                normal: 'Roboto-Regular.ttf',
+                bold: 'Roboto-Medium.ttf',
+                italics: 'Roboto-Italic.ttf',
+                bolditalics: 'Roboto-MediumItalic.ttf'
+        },
+        Baskerville: {
+        	normal: 'Baskerville.ttf'
+
+        },
+        CutiveMono: {
+        	normal: 'CutiveMono-Regular.ttf'
+        },
+        GillSans: {
+        	normal: 'GillSans.ttf'
+        },
+        Merriweather: {
+        	normal: 'Merriweather.ttf'
+        },
+        OpenDyslexic: {
+        	normal: "OpenDyslexic.ttf"
+        }
+			};
+			var dd = {
+			  header: {text: "Poetics of Computation By Taeyoon Choi", alignment: "center", margin: [0, 5, 0 ,0], fontSize: 8},
+				content: content,
+			  defaultStyle: {
+			    font: 'Baskerville'
+			  },
+				styles: styles
+			}
+
+
+
+			pdfMake.createPdf(dd).download("PoeticsOfComputationHighlights.pdf");
+		}
+	</script>
+</body>
+</html>

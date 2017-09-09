@@ -1,0 +1,603 @@
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 850px) {
+    	/* temp reference display none*/
+	.reference, .alt-wrapper {
+		display: none;
+	}
+	.reference {
+		display: block;
+	}
+	.line {
+		display: none;
+	}
+	.container{
+		width: 100%;
+	}
+	.main {
+		width: 100%;
+	}
+	.scroll-panel {
+		display: none;
+	}
+	.control-panel {
+		width: 100%;
+		/*border-right: none;*/
+	}
+
+	#pinContainer {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* lets it scroll lazy */
+	}
+	.page-title {
+		display: none;
+	}
+	.page-wrapper {
+		position: relative;
+		left: 0 !important;
+		border-right: none;
+	}
+
+	.container {
+		margin: 0 !important;
+	}
+
+	.main, .reference, .alt, .alt-reference {
+	 padding: 20px !important;
+	}
+	.main {
+		/*addded to give citation numbers some extra breathing room*/
+		padding-right: 30px !important;
+	}
+	.slider-controls, .button-controls, .utility{
+	  margin: 35px 0;
+	}
+	.slider-controls:nth-of-type(1) {
+		margin-top: 0px;
+	}
+	.slider-controls:first-of-type {
+		margin-top: 35px;
+	}
+
+	.blockquote {
+		    padding: 20px 30px;
+    display: inline-block;
+    line-height: inherit;
+	}
+
+	input[type=range] {
+	  margin: 30px 0;
+	}
+
+	input[type=range]::-webkit-slider-thumb {
+	  border: 1px solid #000000;
+	  height: 34px;
+	  width: 34px;
+	  border-radius: 50%;
+	  background: #fff;
+	  cursor: pointer;
+	  -webkit-appearance: none;
+	  margin-top: -17px;
+	}
+
+	.break-words {
+		word-wrap: break-word;
+		hyphens: auto;
+	}
+	.bookmark-modal { 
+		width: 260px;
+	 }
+	.bookmark-go, .bookmark-stay {
+		margin: 0;
+		margin-top: 10px;
+		width: 100%;
+	}
+	.shutter {
+		width: 100%;
+		display: none;
+	}
+	.table-of-contents .export-highlights {
+		width: 100%;
+	}
+	.export-highlights, .export-highlights-wrapper {
+		display: none;
+	}
+	.table-of-contents .chapter-heading, .table-of-contents .section-title {
+    margin: 30px 0;
+	}
+	.table-of-contents .main {
+		width: 100%;
+	}
+	.table-of-contents .page-title {
+		display: block;
+	}
+	.chapter-download {
+		display: none !important;
+	}
+	.main-wrapper {
+		width: 200%;
+	}
+	.main, .reference {
+    width: 50%;
+	}
+
+	.reference .sub-title {
+   	font-size: inherit !important;
+	}
+	.reference p, .image-details, .reference-section li, .table-of-contents li  {
+		font-size: inherit;
+	}
+	.citation, .alt-body-text {
+		padding-left: 0;
+		padding-right: 0;
+		/*width: 100%;*/
+	}
+	.citation-block {
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    pointer-events: all;
+	}
+	.reference a {
+		     border-bottom: 1px solid #000; 
+     pointer-events: all
+	}
+
+	.citation-bar {
+		display: block;
+	}
+
+	.page-wrapper {
+		overflow: hidden;
+	}
+
+	.main-wrapper {
+		transition: transform .25s ease;
+	}
+
+	.view-reference.main-wrapper {
+		transform: translateX(-50%);
+	}
+
+	.bookcover {
+		width: 300px;
+	}
+	.bookcover-info {
+		left: 45px;
+		top: 6px;
+		font-size: 13px;
+	}
+	.book-title {
+		/*font-size: 32px;*/
+	}
+	.book-author {
+		/*font-size: 18px;*/
+	}
+	.home-slider {
+		margin: 20px 0;
+		margin-top: 5px;
+	}
+
+	.footer {
+		width: 50%;
+	}
+
+	.citations-controls, .focus-controls, .line-length-controls {
+		display: none;
+	}
+
+	.pagefooter, .page-num {
+		display: none;
+	}
+
+	.citation, .alt-body-text {
+	  border: none !important;
+	}
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+  	/* temp reference display none*/
+	.reference, .alt-wrapper {
+		display: none;
+	}
+	.reference {
+		display: block;
+	}
+	.line {
+		display: none;
+	}
+	.container{
+		width: 100%;
+	}
+	.main {
+		width: 100%;
+	}
+	.scroll-panel {
+		display: none;
+	}
+	.control-panel {
+		width: 100%;
+		/*border-right: none;*/
+	}
+
+	#pinContainer {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* lets it scroll lazy */
+	}
+	.page-title {
+		display: none;
+	}
+	.page-wrapper {
+		position: relative;
+		left: 0 !important;
+		border-right: none;
+	}
+
+	.container {
+		margin: 0 !important;
+	}
+
+	.main, .reference, .alt, .alt-reference {
+	 padding: 20px !important;
+	}
+	.main {
+		/*addded to give citation numbers some extra breathing room*/
+		padding-right: 30px !important;
+	}
+	.slider-controls, .button-controls, .utility{
+	  margin: 35px 0;
+	}
+	.slider-controls:nth-of-type(1) {
+		margin-top: 0px;
+	}
+	.slider-controls:first-of-type {
+		margin-top: 35px;
+	}
+
+	.blockquote {
+		    padding: 20px 30px;
+    display: inline-block;
+    line-height: inherit;
+	}
+
+	input[type=range] {
+	  margin: 30px 0;
+	}
+
+	input[type=range]::-webkit-slider-thumb {
+	  border: 1px solid #000000;
+	  height: 34px;
+	  width: 34px;
+	  border-radius: 50%;
+	  background: #fff;
+	  cursor: pointer;
+	  -webkit-appearance: none;
+	  margin-top: -17px;
+	}
+
+	.break-words {
+		word-wrap: break-word;
+		hyphens: auto;
+	}
+	.bookmark-modal { 
+		width: 260px;
+	 }
+	.bookmark-go, .bookmark-stay {
+		margin: 0;
+		margin-top: 10px;
+		width: 100%;
+	}
+	.shutter {
+		width: 100%;
+		display: none;
+	}
+	.table-of-contents .export-highlights {
+		width: 100%;
+	}
+	.export-highlights, .export-highlights-wrapper {
+		display: none;
+	}
+	.table-of-contents .chapter-heading, .table-of-contents .section-title {
+    margin: 30px 0;
+	}
+	.table-of-contents .main {
+		width: 100%;
+	}
+	.table-of-contents .page-title {
+		display: block;
+	}
+	.chapter-download {
+		display: none !important;
+	}
+	.main-wrapper {
+		width: 200%;
+	}
+	.main, .reference {
+    width: 50%;
+	}
+
+	.reference .sub-title {
+   	font-size: inherit !important;
+	}
+	.reference p, .image-details, .reference-section li, .table-of-contents li  {
+		font-size: inherit;
+	}
+	.citation, .alt-body-text {
+		padding-left: 0;
+		padding-right: 0;
+		/*width: 100%;*/
+	}
+	.citation-block {
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    pointer-events: all;
+	}
+	.reference a {
+		     border-bottom: 1px solid #000; 
+     pointer-events: all
+	}
+
+	.citation-bar {
+		display: block;
+	}
+
+	.page-wrapper {
+		overflow: hidden;
+	}
+
+	.main-wrapper {
+		transition: transform .25s ease;
+	}
+
+	.view-reference.main-wrapper {
+		transform: translateX(-50%);
+	}
+
+	.bookcover {
+		width: 300px;
+	}
+	.bookcover-info {
+		left: 45px;
+		top: 6px;
+		font-size: 13px;
+	}
+	.book-title {
+		/*font-size: 32px;*/
+	}
+	.book-author {
+		/*font-size: 18px;*/
+	}
+	.home-slider {
+		margin: 20px 0;
+		margin-top: 5px;
+	}
+
+	.footer {
+		width: 50%;
+	}
+
+	.citations-controls, .focus-controls, .line-length-controls {
+		display: none;
+	}
+
+	.pagefooter, .page-num {
+		display: none;
+	}
+
+	.citation, .alt-body-text {
+	  border: none !important;
+	}
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (max-width: 767px) {
+
+
+	/* temp reference display none*/
+	.reference, .alt-wrapper {
+		display: none;
+	}
+	.reference {
+		display: block;
+	}
+	.line {
+		display: none;
+	}
+	.container{
+		width: 100%;
+	}
+	.main {
+		width: 100%;
+	}
+	.scroll-panel {
+		display: none;
+	}
+	.control-panel {
+		width: 100%;
+		/*border-right: none;*/
+	}
+
+	#pinContainer {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* lets it scroll lazy */
+	}
+	.page-title {
+		display: none;
+	}
+	.page-wrapper {
+		position: relative;
+		left: 0 !important;
+		border-right: none;
+	}
+
+	.container {
+		margin: 0 !important;
+	}
+
+	.main, .reference, .alt, .alt-reference {
+	 padding: 20px !important;
+	}
+	.main {
+		/*addded to give citation numbers some extra breathing room*/
+		padding-right: 30px !important;
+	}
+	.slider-controls, .button-controls, .utility{
+	  margin: 35px 0;
+	}
+	.slider-controls:nth-of-type(1) {
+		margin-top: 0px;
+	}
+	.slider-controls:first-of-type {
+		margin-top: 35px;
+	}
+
+	.blockquote {
+		    padding: 20px 30px;
+    display: inline-block;
+    line-height: inherit;
+	}
+
+	input[type=range] {
+	  margin: 30px 0;
+	}
+
+	input[type=range]::-webkit-slider-thumb {
+	  border: 1px solid #000000;
+	  height: 34px;
+	  width: 34px;
+	  border-radius: 50%;
+	  background: #fff;
+	  cursor: pointer;
+	  -webkit-appearance: none;
+	  margin-top: -17px;
+	}
+
+	.break-words {
+		word-wrap: break-word;
+		hyphens: auto;
+	}
+	.bookmark-modal { 
+		width: 260px;
+	 }
+	.bookmark-go, .bookmark-stay {
+		margin: 0;
+		margin-top: 10px;
+		width: 100%;
+	}
+	.shutter {
+		width: 100%;
+		display: none;
+	}
+	.table-of-contents .export-highlights {
+		width: 100%;
+	}
+	.export-highlights, .export-highlights-wrapper {
+		display: none;
+	}
+	.table-of-contents .chapter-heading, .table-of-contents .section-title {
+    margin: 30px 0;
+	}
+	.table-of-contents .main {
+		width: 100%;
+	}
+	.table-of-contents .page-title {
+		display: block;
+	}
+	.chapter-download {
+		display: none !important;
+	}
+	.main-wrapper {
+		width: 200%;
+	}
+	.main, .reference {
+    width: 50%;
+	}
+
+	.reference .sub-title {
+   	font-size: inherit !important;
+	}
+	.reference p, .image-details, .reference-section li, .table-of-contents li  {
+		font-size: inherit;
+	}
+	.citation, .alt-body-text {
+		padding-left: 0;
+		padding-right: 0;
+		/*width: 100%;*/
+	}
+	.citation-block {
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    pointer-events: all;
+	}
+	.reference a {
+		     border-bottom: 1px solid #000; 
+     pointer-events: all
+	}
+
+	.citation-bar {
+		display: block;
+	}
+
+	.page-wrapper {
+		overflow: hidden;
+	}
+
+	.main-wrapper {
+		transition: transform .25s ease;
+	}
+
+	.view-reference.main-wrapper {
+		transform: translateX(-50%);
+	}
+
+	.bookcover {
+		width: 300px;
+	}
+	.bookcover-info {
+		left: 45px;
+		top: 6px;
+		font-size: 13px;
+	}
+	.book-title {
+		/*font-size: 32px;*/
+	}
+	.book-author {
+		/*font-size: 18px;*/
+	}
+	.home-slider {
+		margin: 20px 0;
+		margin-top: 5px;
+	}
+
+	.footer {
+		width: 50%;
+	}
+
+	.citations-controls, .focus-controls, .line-length-controls {
+		display: none;
+	}
+
+	.pagefooter, .page-num {
+		display: none;
+	}
+
+	.citation, .alt-body-text {
+	  border: none !important;
+	}
+
+}

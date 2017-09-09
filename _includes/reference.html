@@ -1,0 +1,51 @@
+<div id="alt-wrapper" class="alt-wrapper group">
+	<div id="alt" class="alt">
+			<div class="alt-chapter-head">
+				<h1 class="alt-chapter-heading">Chapt. 01:</h1>
+				<div class="alt-chapter-title-line"></div>
+				<h1 class="alt-chapter-heading">{{page.title}}</h1>
+			</div>
+		<div id="alt-content-wrapper" class="alt-content-wrapper">
+			{% for section in page.sections %}
+				{% assign sectionIdx = forloop.index %}
+				<div class="alt-content-section">
+					<h3 class="alt-section-title">{{section.title}}</h3>
+					{% for paragraph in section.paragraphs %}
+						<p class="alt-body-text altb-{{sectionIdx}}-{{forloop.index}}">
+							{{paragraph.text}}
+						</p>
+					{% endfor %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div id="alt-reference" class="alt-reference">
+			{% for section in page.sections %}
+					{% assign sectionIdx = forloop.index %}
+
+					{% for paragraph in section.paragraphs %}
+						{% assign idx = forloop.index %}
+						 <div class="alt-citation-wrap">
+							<div class="alt-citation-block" data-ref="altb-{{sectionIdx}}-{{forloop.index}}">
+								{% for citation in paragraph.citations %}
+									<div class="alt-citation">
+										<p>
+											<span class="italic">{{citation.preview}}</span>, by
+										  {{citation.author}}
+										</p>
+									</div>
+								{% endfor %}
+							</div>
+							
+							{% for image in paragraph.image %}
+								<div class="alt-citation-block alt-image-block" data-ref="b-{{sectionIdx}}-{{idx}}">
+									<img src="/images/{{image.src}}" alt=""><span>{{image.caption}}</span>
+								</div>
+							{% endfor %}
+						</div>
+					{% endfor %}
+			{% endfor %}
+	</div>
+</div>
+
+

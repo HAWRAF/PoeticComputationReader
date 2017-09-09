@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body id="body">    
+    <div class="bookcover">
+      <img class="bookcover-image" src="/images/bookcover.jpg" alt="">
+      <div class="bookcover-info preview-text">
+        <h1 class="book-title">Poetics of Computation</h1>
+        <h3 class="book-author">Taeyoon Choi</h3>
+      </div>
+      <div class="slider-controls home-slider">
+        <input type="range" id="font-size" min="10" value="1000" max="2000" >
+      </div>
+
+      <a href="/chapters/ch.1/"><div class="btn start">Start Reading</div></a>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script>
+      var $fontSize = $("#font-size");
+      var defaults = {
+        typeSize: {
+          chapterHeader: 42,
+          sectionTitle: 42,
+          subTitle: 32,
+          body: 18
+        },
+        typeContrast: {
+          1: "helvetica",
+          2: "gill-sans",
+          3: "merriweather",
+          4: "baskerville",
+          5: "cutive-mono"
+        },
+        typeContrastVal: 2,
+        lineHeight: {
+          chapterHeader: 1.4,
+          sectionTitle: 1.4,
+          subTitle: 1.4,
+          body: 1.4
+        },
+        letterSpacing: {
+          chapterHeader: 2,
+          sectionTitle: 1.75,
+          subTitle: 1.2,
+          body: 1
+        }
+      };
+      var $previewText = $('.preview-text ') 
+      var w = window.innerWidth;
+
+      $fontSize.on("change", function(ev) {
+        $target = $(ev.delegateTarget);
+        fontMultiplier = $target.get(0).value / 1000;
+        if (w < 769) {
+          fontMultiplier *= .7
+        }
+        if (fontMultiplier === 0) {fontMultiplier += (1/ 1000)} 
+        $previewText.css("font-size", defaults.typeSize.body * fontMultiplier)
+      })  
+    </script>
+</body>
+</html>

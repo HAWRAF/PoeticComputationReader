@@ -1,0 +1,16 @@
+<div id="footer" class="footer group">
+	<div class="nav-section">
+	{% assign nextChapter = site.chapters | where_exp:"item",
+																							 "item.chapter > page.chapter" %}	
+		<h1>End of Chapter {{page.chapter}} {{nextChapter.chapter}}</h1>
+		{% for chapter in nextChapter %}
+			{% if forloop.index == 1 and chapter.active == true %}
+<!-- 				<a class="nav-link" href="/chapters/ch.{{page.chapter | plus: 1}}-p.1"><div class="nav-next nav-button">Next Chapter</div></a> -->
+
+							<a class="nav-link" href="{{chapter.url}}"><div class="nav-next nav-button">Next Chapter</div></a>
+			{% endif %}
+		{% endfor %}
+
+	</div>
+	<h6 class="page-num">{{page.chapter | minus: 1 | times: 3 | plus: page.page }}</h6>
+</div>

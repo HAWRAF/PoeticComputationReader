@@ -1,0 +1,6 @@
+---
+title:  "What is Poetic Computation?"
+date:   2017-05-24 13:32:33 -0400
+categories: jekyll update
+layout: chapter
+---

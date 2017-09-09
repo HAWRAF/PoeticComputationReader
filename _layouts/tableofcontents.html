@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body id="table-of-contents" class="table-of-contents">
+		<div class="header">
+			<h1 class="page-title">Table of Contents</h1>
+		</div>
+		
+    <div>
+      <div id="container" class="container group hidefocus">
+        <div class="main">
+
+         <div class="introduction">
+         	<h1 class="chapter-heading">Poetics of Computation</h1>
+         	<p class="body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum illum, perferendis, voluptas quibusdam nulla odio dolor ad culpa iusto fugit quae, magnam porro deleniti voluptate tenetur ipsa. Eum, error, officiis.</p>
+         	<h3 class="sub-title">Written by Taeyoon Choi</h3>
+         	<!-- <h3 class="sub-title">Edited by John Hancock</h3> -->
+         	<h3 class="sub-title">Designed by HAWRAF</h3>
+         </div>
+         <div class="export-highlights-wrapper">         	
+         		<p class="export-cta">You can export all of your highlights as a pdf.</p>
+		        <a href="/highlights" class="group" style="display: block;">
+		        	<div class="btn export-highlights">View</div>
+		        </a>
+         </div>
+
+
+          {% assign chapters = site.chapters %}
+          {% for chapter in chapters %}
+            {% if chapter.page == 1 and chapter.active == true %}
+
+	            <div class="chapter-title-wrapper">
+	            	<h1 class="sub-title">Chapt. 0{{ chapter.chapter }}</h1>
+	            	<div class="chapter-title-line"></div>
+	            	<a href="{{chapter.url}}" >
+		            	<h1 class="chapter-heading">{{chapter.title}}</h1>
+	            	</a>
+	           		<p class="body-text">{{chapter.summary}}</p>
+	           		<div class="group">
+			            <a href="{{chapter.url}}" class="group nav-link">
+				            <div class="btn">Read</div>
+			            </a>
+
+<!-- 									<a href="{{chapter.pdf}}" download class="chapter-download">
+										<div class="btn">Download</div>
+									</a> -->
+	           		</div>
+	            </div>
+						{% elsif chapter.page == 1 and chapter.active == false %}
+	            <div class="chapter-title-wrapper inactive">
+	            	<h1 class="sub-title">Chapt. 0{{ chapter.chapter }}</h1>
+	            	<div class="chapter-title-line"></div>
+	            	<h1 class="chapter-heading">{{chapter.title}}</h1>
+	            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+    </div>
+
+    <div class="lines lines-right" style="">
+      {% for chapter in site.chapters%}
+        <span data-id="f-{{forloop.index}}" class="line"> </span>
+      {% endfor %}
+    </div>
+  </div>
+
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+	<script src="/scripts/storage.js"></script>
+  <script>
+	  var storage = Storages.localStorage
+
+		$('a.nav-link').click(function(ev) {
+			ev.preventDefault();
+			storage.set('settings.fromNav', true);
+
+			window.location.href = $(ev.delegateTarget).attr("href")
+		})
+  </script>
+</body>
+</html>

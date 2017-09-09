@@ -1,0 +1,219 @@
+{% assign stackorder = 10 %}
+{% assign citationCount = 0 %}
+{% for page in activeChapter %}
+	{% assign stackorder = stackorder | minus: 1 %}
+		<div class="page-wrapper page page-{{page.page}} group" style="z-index: {{stackorder}}; left: {{page.page | minus: 1 | times: 7}}px;">
+			
+			<div id="citation-bar" class="citation-bar">					
+					{% for section in page.sections %}
+						{% assign sectionIdx = forloop.index %}
+
+						{% for paragraph in section.paragraphs %}
+							{% assign idx = forloop.index %}
+							{% if paragraph.citations %}
+								<div class="citation-num-wrapper" data-page="{{page.page}}" data-ref="b-{{page.page}}-{{sectionIdx}}-{{idx}}">
+									{% for citation in paragraph.citations %}
+										{% assign citationCount =  citationCount | plus: 1 %}
+										<span class="citation-num-mobile">{{citationCount}}</span>
+									{% endfor %}
+									<span class="citation-arrow">→</span>
+								</div>
+							{% endif %}
+							{% if paragraph.image %}
+								{% for image in paragraph.image %}
+								{% assign citationCount =  citationCount | plus: 1 %}
+									<div class="citation-num-wrapper image-citation-wrapper" data-page="{{page.page}}" data-ref="b-{{page.page}}-{{sectionIdx}}-{{idx}}">									
+										<span class="citation-num-mobile image-citation-num">{{citationCount}}</span>
+										<span class="citation-arrow">→</span>
+									</div>
+								{% endfor %}
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+			</div>
+
+
+
+
+			<div id="main-wrapper" class="main-wrapper mw-{{page.page}} group" style="">
+				<div id="main" class="main m-{{page.page}}">
+					{% if page.page == 1 %}
+						<div class="chapter-head">
+							<h1 class="section-title">Chapt. 0{{page.chapter}}</h1>
+							<div class="chapter-title-line"></div>
+							<h1 id="chapter-title" class="chapter-heading chapter-title">{{page.title}}</h1>
+						</div>
+					{% endif %}
+
+
+					<div class="content-wrapper content-wrapper-{{page.page}}">
+							{% for section in page.sections %}
+								{% assign sectionIdx = forloop.index %}
+								<div id="sec-{{page.page}}-{{sectionIdx}}" class="content-section"> 
+									{% if section.title %}
+										<h3 class="section-title">{{section.title}}</h3>
+									{% endif %}
+									{% for paragraph in section.paragraphs %}
+										{% if paragraph.subTitle %}
+											<h4 class="sub-title">{{paragraph.subTitle}}</h4>
+										{% endif %}
+										<p id="b-{{page.page}}-{{sectionIdx}}-{{forloop.index}}" class="body-text b-{{page.page}}-{{sectionIdx}}-{{forloop.index}}">
+											{{paragraph.text}}
+										</p>
+											{% if paragraph.inlineImage %}
+												{% for image in paragraph.inlineImage %}
+													<div>
+														<img class="inline-image" src="/images/{{image.src}}" alt="">
+														<span class="image-details">{{image.caption}}</span>
+													</div>
+
+												{% endfor %}
+										
+											{% endif %}
+									{% endfor %}
+								</div>
+							{% endfor %}
+					</div>
+				</div>
+				<div id="reference" class="reference citations images r-{{page.page}}" >
+					{% if page.page == 1 %}
+						<div class="reference-header citation">
+							<div class="reference-section">
+								<h3 class="sub-title">Reference Reading</h3>	
+								<ul>
+									{% for ref in page.references %}
+										<li><a href="{{ref.link}}" target="_blank"><span class="link italic">{{ref.body}}</span></li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+					{% endif %}
+
+					<div id="citation-section" class="citation-section">
+							{% for section in page.sections %}
+									{% assign sectionIdx = forloop.index %}
+
+									{% for paragraph in section.paragraphs %}
+										{% assign idx = forloop.index %}
+										
+										{% if paragraph.citations %}
+											<div class="citation-block" data-page="{{page.page}}" data-ref="b-{{page.page}}-{{sectionIdx}}-{{forloop.index}}">
+												{% for citation in paragraph.citations %}
+													<div class="citation">
+														<p>
+															<span class="italic">{{citation.text}}</span>
+														</p>
+													</div>
+												{% endfor %}
+											</div>
+										{% endif %}
+
+										{% if paragraph.image %}
+											{% for image in paragraph.image %}
+												<div class="citation-block image-block" data-page="{{page.page}}" data-ref="b-{{page.page}}-{{sectionIdx}}-{{idx}}">
+													<span class="image-switch"><span class="one"></span><span class="two"></span></span>
+
+													<img src="/images/{{image.src}}" alt="" class="citation"><span class="image-details"><span>Reference Image</span> {{image.caption}}</span>
+												</div>
+											{% endfor %}	
+										{% endif %}
+
+
+										{% for sketch in paragraph.sketch %}
+
+											<div class="canvas-container" data-ref="b-{{page.page}}-{{sectionIdx}}-{{idx}}" data-page="{{page.page}}">
+												<div id="canvas-container"></div>
+											</div>
+
+										{% endfor %}
+									{% endfor %}
+
+							{% endfor %}
+
+					</div>
+				</div>
+
+				{% if forloop.last == true %}
+					{% include chapterfooter.html %}
+				{% else %}
+					{% include pagefooter.html %}
+				{% endif %}
+			</div>
+
+
+			<div id="alt-wrapper" class="alt-wrapper aw-{{page.page}} group">
+				<div id="alt" class="alt">
+						<div id="alt-chapter-head" class="alt-chapter-head">
+							<h1 class="alt-chapter-heading">Chapt. 0{{page.chapter}}:</h1>
+							<div class="alt-chapter-title-line"></div>
+							<h1 class="alt-chapter-heading">{{page.title}}</h1>
+						</div>
+					<div id="alt-content-wrapper" class="alt-content-wrapper">
+						{% for section in page.sections %}
+							{% assign sectionIdx = forloop.index %}
+							<div class="alt-content-section">
+								<h3 class="alt-section-title">{{section.title}}</h3>
+								{% for paragraph in section.paragraphs %}
+									<p id="alt-b-{{page.page}}-{{sectionIdx}}-{{forloop.index}}" data-ref="b-{{page.page}}-{{sectionIdx}}-{{forloop.index}}" data-page="{{page.page}}" class="alt-body-text alt-b-{{sectionIdx}}-{{forloop.index}}">
+										{{paragraph.text}}
+									</p>
+								{% endfor %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+				<div id="alt-reference" class="alt-reference">
+					{% if page.page == 1 %}
+						<div id="alt-reference-header" class="alt-reference-header">
+							<div class="alt-reference-section">
+								<h3 class="sub-title">Reference Reading</h3>	
+								<ul>
+									{% for ref in page.references %}
+										<li><a href="{{ref.link}}" target="_blank"><span class="link italic">{{ref.body}}</span></li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+					{% endif %}
+					{% for section in page.sections %}
+							{% assign sectionIdx = forloop.index %}
+
+							{% for paragraph in section.paragraphs %}
+								{% assign idx = forloop.index %}
+								 {% if paragraph.citations or paragraph.image %}
+										<div class="alt-citation-block" data-ref="alt-b-{{page.page}}-{{sectionIdx}}-{{forloop.index}}" data-page="{{page.page}}">
+										{% for citation in paragraph.citations %}
+											<div class="alt-citation">
+												<p>
+													<span class="italic">{{citation.text}}</span>
+												</p>
+											</div>
+										{% endfor %}
+
+									{% for image in paragraph.image %}
+										<div class="alt-img-wrap">
+											<img class="alt-citation alt-citation-img" src="/images/{{image.src}}" alt=""><div class="alt-image-caption">{{image.caption}}</div>
+										</div>
+
+									{% endfor %}
+									</div>
+								 {% endif %}
+
+									
+									{% for image in paragraph.image %}
+						<!-- 				<div class="alt-citation-block alt-image-block" data-ref="alt-b-{{page.page}}-{{sectionIdx}}-{{forloop.index}}" data-page="{{page.page}}">
+											<img src="/images/{{image.src}}" alt=""><span>{{image.caption}}</span>
+										</div> -->
+									{% endfor %}
+							{% endfor %}
+					{% endfor %}
+				</div>
+
+				{% include pagefooter.html %}
+			</div>			
+		</div>
+
+
+
+{% endfor %}
+
