@@ -55,7 +55,7 @@
 			  {% for page in futureChapters %}
 					<span data-id="f-{{forloop.index}}" class="line {% if page.page == 2 %} with-link {% endif %}">
 						{% if page.page == 2 %}
-							<a class="nav-link {% if page.active == false %} inactive {% endif %}" href="/chapters/ch.{{page.chapter}}-p.1">
+							<a class="nav-link {% if page.active == false %} inactive {% endif %}" href="/chapters/ch.{{page.chapter}}">
 								<span class="chapter-link {% if page.active == false %} inactive {% endif %}">Chapter {{page.chapter}} </span>
 							</a>
 						{% endif %}
