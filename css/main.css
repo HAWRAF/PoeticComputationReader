@@ -623,7 +623,11 @@ ul, li {
   background: #000;
   cursor: -webkit-grab;
   cursor: grab;
-  /*opacity: .1;*/
+  /*opacity: 1;*/
+  /*transition: opacity .4s ease;*/
+}
+.scroll-handle.is-transitioning {
+  opacity: 0;
 }
 
 
@@ -685,6 +689,11 @@ ul, li {
   border-right: 1px solid #000;
   position: absolute;
   background: #fff;
+  transition: border .4s ease;
+}
+
+.page-wrapper.is-transitioning {
+  border-right: 1px solid transparent;
 }
 .alt-wrapper, .main-wrapper {
   background: #fff;
@@ -1537,13 +1546,14 @@ input[type=range]:focus::-ms-fill-upper {
   opacity: 0;
 }
 .main-wrapper, .alt-wrapper {
-  transition: opacity .65s ease;
+  transition: opacity .1s ease !important;
 }
 .fadeOut{
   opacity: 0;
   pointer-events: none;
 }
 .fadeIn{
+  transition-delay: .4s;
   opacity: 1;
   pointer-events: all;
   visibility: visible;

@@ -7,22 +7,22 @@ page: 1
 active: true
 references:
   - title: 'Sample Ref One'
-    link: 'http://www.google.com'
+    link: 'http://www.example.com'
     author: 'Sample Author One'
   - title: 'Sample Ref Two'
-    link: 'http://www.google.com'
+    link: 'http://www.example.com'
     author: 'Sample Author Two'
   - title: 'Sample Ref Three'
-    link: 'http://www.google.com'
+    link: 'http://www.example.com'
     author: 'Sample Author Three'
   - title: 'Sample Ref Four'
-    link: 'http://www.google.com'
+    link: 'http://www.example.com'
     author: 'Sample Author Four'
   - title: 'Sample Ref Five'
-    link: 'http://www.google.com'
+    link: 'http://www.example.com'
     author: 'Sample Author Five'
   - title: 'Sample Ref Six'
-    link: 'http://www.google.com'
+    link: 'http://www.example.com'
     author: 'Sample Author Six'
 sections:
   - title: "Introduction"

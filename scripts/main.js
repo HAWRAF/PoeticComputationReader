@@ -146,6 +146,8 @@ var $subTitle = $(".sub-title");
 var $bodyText = $(".body-text");
 var $reference = $("#reference");
 var $altReference = $(".alt-reference");
+var $pageWrapper = $(".page-wrapper");
+var $scrollHandle = $('.scroll-handle');
 
 
 var $previewText = $("#preview-text");
@@ -209,7 +211,9 @@ window.currOffsetY = 0;
 window.init = function() { 
 
 	window.scrollTo(0, 0);
-		
+	$(window).scrollTop(0);
+	window.controller.scrollTo(0)
+
 	applySettings()
 
 	if (!settings.highlightText[window.currentChapter]) {settings.highlightText[window.currentChapter] = []}
@@ -218,7 +222,7 @@ window.init = function() {
 	updateSliders()
 	updateSwitches()
 	updatePreview()
-	
+
 	setSeparationLine()
 	setReferenceHeaders()
 	setReferenceImages()
@@ -226,6 +230,7 @@ window.init = function() {
 	setCitationLocations()
 	setCitationNumLocations()
 	setAltCitationLocations()
+
 
 	scrollHeight = $(document).height() - $(window).height()
 	
@@ -872,6 +877,8 @@ function toggleAltView() {
 	window.ONMAINPAGE = false;
 
 	$separationLine.addClass("show");
+	$pageWrapper.addClass("is-transitioning");
+	$scrollHandle.addClass("is-transitioning");
 
 	setTimeout(function() {
 		// $mainWrapper.fadeOut()
@@ -880,7 +887,7 @@ function toggleAltView() {
 	setTimeout(function() {
 
 		$separationLine.css("transform", "translate3d("+separationOffsets.alt+"px, 0, 0)");
-	}, 300)
+	}, 250)
 
 	setTimeout(function() {
 		// $altWrapper.css('opacity', 1).css("display", "block");
@@ -888,20 +895,23 @@ function toggleAltView() {
 		setAltReferenceHeaders()
 		setCitationNumLocations()
 		setAltCitationLocations()
-		
-		
-		// $altWrapper.fadeIn(600)
-	}, 680)
+
+	}, 600);
+
 		setTimeout(function() {
 		$altWrapper.addClass("fadeIn")
 		$separationLine.removeClass("show");
-	}, 720)
+		$pageWrapper.removeClass("is-transitioning")
+		$scrollHandle.removeClass("is-transitioning");
+
+	}, 1000)
 }
 
 function toggleMainView() {
 	window.ONMAINPAGE = true;
-
+	$pageWrapper.addClass("is-transitioning");
 	$separationLine.addClass("show");
+	$scrollHandle.addClass("is-transitioning");
 
 	setTimeout(function() {
 		// $altWrapper.fadeOut()
@@ -910,7 +920,7 @@ function toggleMainView() {
 
 	setTimeout(function() {
 		$separationLine.css("transform", "translate3d("+separationOffsets.main+"px, 0, 0)");
-	}, 300)
+	}, 250)
 
 	setTimeout(function() {
 			window.mainReset()
@@ -922,12 +932,15 @@ function toggleMainView() {
 
 			
 
-	},680)
+	},600)
 
 		setTimeout(function() {
 		$mainWrapper.removeClass("fadeOut");
 		$separationLine.removeClass("show");
-	}, 720)
+		$pageWrapper.removeClass("is-transitioning");
+		$scrollHandle.removeClass("is-transitioning");
+
+	}, 1000)
 }
 
 
@@ -1251,6 +1264,10 @@ function textToSpeech(text) {
 }
 
 window.onbeforeunload = function(event) {
+	// make sure we go to the top before reloading
+ window.controller.scrollTo(0)
+
+ // window.controller.scr
 	if (synth) {
 		synth.cancel()
 	}    
@@ -1362,7 +1379,8 @@ $(window).on("load", function() {
 })
 
 $(document).ready(function() {
-		$(this).scrollTop(0);
+		$(window).scrollTop(0);
+		// window.
 		deserializeHighlights()
 })
 
