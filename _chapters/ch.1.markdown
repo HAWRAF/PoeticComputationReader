@@ -9,18 +9,23 @@ references:
   - title: 'Gramophone, film, typewriter'
     link: 'https://monoskop.org/images/7/73/Kittler_Friedrich_Gramophone_Film_Typewriter.pdf'
     author: 'Friedrich Kittler'
+    body: 'Gramophone, film, typewriter by Friedrich Kittler'
   - title: 'War in the Age of Intelligent Machines'
     link: 'https://monoskop.org/images/c/c0/DeLanda_Manuel_War_in_the_Age_of_Intelligent_Machines.pdf'
     author: 'Manuel DeLanda'
+    body: 'War in the Age of Intelligent Machines by Manuel DeLanda'
   - title: 'Work in the age of Mechanical Reproduction'
     link: 'https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm'
     author: 'Walter Bejamin'
+    body: 'Work in the age of Mechanical Reproduction by Walter Benjamin'
   - title: 'Being is a computational mode'
     link: 'http://cultureandcommunication.org/galloway/being-is-a-computational-mode'
     author: 'Alex Galloway'
+    body: 'Being is a computational mode by Alex Galloway'
   - title: 'Claude Shannon: Reluctant Father of the Digital Age'
     link: 'https://www.technologyreview.com/s/401112/claude-shannon-reluctant-father-of-the-digital-age/'
     author: 'M. Mitchell Waldrop'
+    body: 'Claude Shannon: Reluctant Father of the Digital Age by M. Mitchell Waldrop'
 sections:
   - title: "Introduction"
     paragraphs:

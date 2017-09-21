@@ -5,17 +5,24 @@ pdf: "/pdfs/chapterOne.pdf"
 chapter: 2
 page: 1
 active: true
+
 references:
-  - title: 'Borges, Jorge Luis. “Funes the Memorious.” Translated by Anthony Kerrigan. New York: Grove Weidenfeld, 1962.'
-  - title: 'Bush, Vannevar. “As We May Think.” Atlantic (July 1945). Accessed July 18, 2017.'
+  - title: 'Gramophone, film, typewriter'
+    link: 'https://monoskop.org/images/7/73/Kittler_Friedrich_Gramophone_Film_Typewriter.pdf'
+    author: 'Friedrich Kittler'
+    body: 'Gramophone, film, typewriter by Friedrich Kittler' 
+  - title: 'The Enduring Ephemeral, or the Future Is a Memory'
+    link: 'https://aestech.wikischolars.columbia.edu/file/view/Hui+Kyong+Chun--the_enduring_ephemeral_or.pdf'
+    author: 'Wendy Hui Kyong Chun'
+    body: 'The Enduring Ephemeral, or the Future Is a Memory by Wendy Hui Kyong Chun'
+  - title: 'As We May Think'
     link: 'https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/'
-  - title: 'Chun, Wendy Hui Kyong. “The Enduring Ephemeral, or the Future is a Memory.” Critical Inquiry 35 (Autumn 2008). '
-  - title: 'Malabou, Catherine. What Should We Do With Our Brain? Translated by Sebastian Rand. New York: Fordham University Press, 2009.'
-  - title: 'Nelson, Theodor Holm. “Xanalogical Structure, Needed Now More than Ever: Parallel Documents, Deep Links to Content, Deep Versioning and Deep Re-Use.” Project Xanadu and Keio University, ACM Computing Surveys 31(4), (December 1999). '
-  - title: 'Onuoha, Mimi. “What It Takes To Truly Delete Data.” FiveThirtyEight. Last modified January 30, 2016. '
-    link: 'https://fivethirtyeight.com/features/what-it-takes-to-truly-delete-data/'
-  - title: 'Shannon, Claude E. “A Mathematical Theory of Communication.” The Bell System Technical Journal, vol. 27 (1948): 379-423, 623-656. '
-  - title: 'Wiener, Norbert. Cybernetics: Or Control and Communication in the Animal and the Machine. Cambridge, Massachusetts: MIT Press, 1948.'
+    author: 'Vannevar Bush'
+    body: 'As We May Think by Vannevar Bush'
+  - title: 'Borges, Jorge Luis. “Funes the Memorious.” Translated by Anthony Kerrigan. New York: Grove Weidenfeld, 1962.'
+  - body: 'Funes the Memorious by Jorge Luis Borges'
+
+
 sections:
   - title: "Introduction"
     paragraphs:
