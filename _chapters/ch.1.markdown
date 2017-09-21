@@ -1,6 +1,6 @@
 ---
 title:  "What is poetic about computation?"
-summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum illum, perferendis, voluptas quibusdam nulla odio dolor ad culpa iusto fugit quae, magnam porro deleniti voluptate tenetur ipsa. Eum, error, officiis."
+summary: "Chapter One introduces the poetic aspects of computation and considers how engaging technology with this lens can lead to new political possibilities. In connecting modern computation to its historical antecedents, it problematizes the fetishistic embrace of technology and presents a case for radical intervention."
 pdf: "/pdfs/chapterOne.pdf"
 chapter: 1
 page: 1
@@ -9,24 +9,18 @@ references:
   - title: 'Gramophone, film, typewriter'
     link: 'https://monoskop.org/images/7/73/Kittler_Friedrich_Gramophone_Film_Typewriter.pdf'
     author: 'Friedrich Kittler'
-    body: 'Gramophone, film, typewriter by Friedrich Kittler'
   - title: 'War in the Age of Intelligent Machines'
     link: 'https://monoskop.org/images/c/c0/DeLanda_Manuel_War_in_the_Age_of_Intelligent_Machines.pdf'
     author: 'Manuel DeLanda'
-    body: 'Gramophone, film, typewriter by Friedrich Kittler'
   - title: 'Work in the age of Mechanical Reproduction'
     link: 'https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm'
     author: 'Walter Bejamin'
-    body: 'Gramophone, film, typewriter by Friedrich Kittler'
   - title: 'Being is a computational mode'
     link: 'http://cultureandcommunication.org/galloway/being-is-a-computational-mode'
     author: 'Alex Galloway'
-    body: 'Gramophone, film, typewriter by Friedrich Kittler'
   - title: 'Claude Shannon: Reluctant Father of the Digital Age'
     link: 'https://www.technologyreview.com/s/401112/claude-shannon-reluctant-father-of-the-digital-age/'
     author: 'M. Mitchell Waldrop'
-    body: 'Gramophone, film, typewriter by Friedrich Kittler'
-
 sections:
   - title: "Introduction"
     paragraphs:
