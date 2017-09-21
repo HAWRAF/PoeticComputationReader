@@ -1546,7 +1546,7 @@ input[type=range]:focus::-ms-fill-upper {
   opacity: 0;
 }
 .main-wrapper, .alt-wrapper {
-  transition: opacity .1s ease !important;
+  transition: opacity .4s ease !important;
 }
 .fadeOut{
   opacity: 0;
