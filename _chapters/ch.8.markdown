@@ -1,5 +1,5 @@
 ---
-title:  "Chapter Eight Page 1"
+title:  "Pedagogy"
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum illum, perferendis, voluptas quibusdam nulla odio dolor ad culpa iusto fugit quae, magnam porro deleniti voluptate tenetur ipsa. Eum, error, officiis."
 pdf: "/pdfs/chapterOne.pdf"
 chapter: 8
