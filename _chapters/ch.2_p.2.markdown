@@ -29,7 +29,7 @@ sections:
       - text: " "
         inlineImage:
           - src: "chapter-2/image7.png"
-            caption: "[Minority Report (2002): Via @ <a href='http://www.techrepublic.com/article/sci-fi-is-turned-into-reality-with-technology-guru-from-minority-report-and-iron-man/'>TechRepublic]</a>"
+            caption: "Minority Report (2002): Via @ <a href='http://www.techrepublic.com/article/sci-fi-is-turned-into-reality-with-technology-guru-from-minority-report-and-iron-man/'>TechRepublic </a>"
   
       - text: "To this day, many contemporary technologies have a direct connection to the Memex machine as its basic principle of “trails” are integrated into smartphones, self tracking devices and social media. We’ve learned to harness the computational power of these applications and devices to help us remember and communicate. However, the Memex presented only one vision of computers and is not without its shortcomings.<span class='citation-num'>10</span>"
         citations: 
