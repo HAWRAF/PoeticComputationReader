@@ -11,11 +11,8 @@ sections:
       - text: ""
         inlineImage:
           - src: "chapter-2/image4.png"
-<<<<<<< HEAD
+
             caption: "Image of Neuron: Via @ <a href='http://revistacarbono.com/artigos/03-entrevista-sidarta-ribeiro/'>Carbono</a>"
-=======
-            caption: "[Image of Neuron: Via @ <a href='http://revistacarbono.com/artigos/03-entrevista-sidarta-ribeiro/'>Carbono</a>"
->>>>>>> 199ff9bc7fb9f1590f982346f4f730040d700ef9
 
       - text: "One of the first people to discover the neuron was Ramón y Cajal. In his drawings of a brain neuron, Cajal demonstrated his unique technique of using silver to trace the cell membranes. He used a microscope and traced what he saw onto a piece of paper. His attempt of ‘cartographing’ the connection between the synapses is visible in his drawing. By viewing this picture, <a href='https://s-media-cache-ak0.pinimg.com/originals/6b/5a/6f/6b5a6f3ff840593688cedd4f735631ee.jpg'>one can imagine Cajal in his makeshift lab</a>, tracing the synaptic modulation, trying to understand how brain works."
 

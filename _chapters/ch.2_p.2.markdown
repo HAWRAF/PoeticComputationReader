@@ -26,15 +26,6 @@ sections:
         citations:
           - text: "Minority Report tells a disturbingly familiar tale of a dystopian future that centers on patriarchal protagonists and their quest for a control so complete that even memory (and the temporality embedded therein) is subject to their actions. This kind of narrative appeals to Hollywood film audiences because of their fixation with technology (what can’t technology do?) and the fantasy that technology can grant ultimate mastery over their own bodies, those around them, and the shape of their lives. These kinds of narratives are common in technology product demos, like Apple product launches, where the general message is how the new device will empower you. Whether in the realm of consumerism or in the more fantastic (sci-fi) iterations of entertainment, these narratives shape how we think about and use technology products. "
 
-      - text: " "
-        inlineImage:
-          - src: "chapter-2/image7.png"
-<<<<<<< HEAD
-            caption: "Minority Report (2002): Via @ <a href='http://www.techrepublic.com/article/sci-fi-is-turned-into-reality-with-technology-guru-from-minority-report-and-iron-man/'>TechRepublic </a>"
-=======
-            caption: "[Minority Report (2002): Via @ <a href='http://www.techrepublic.com/article/sci-fi-is-turned-into-reality-with-technology-guru-from-minority-report-and-iron-man/'>TechRepublic]</a>"
->>>>>>> 199ff9bc7fb9f1590f982346f4f730040d700ef9
-  
       - text: "To this day, many contemporary technologies have a direct connection to the Memex machine as its basic principle of “trails” are integrated into smartphones, self tracking devices and social media. We’ve learned to harness the computational power of these applications and devices to help us remember and communicate. However, the Memex presented only one vision of computers and is not without its shortcomings.<span class='citation-num'>10</span>"
         citations: 
           - text: "The Memex presents the vision of a computer as an encyclopedia of knowledge, as a giant archive machine. However, other visions were possible such as computers as a tool for communication and for automation (cybernetics)."
