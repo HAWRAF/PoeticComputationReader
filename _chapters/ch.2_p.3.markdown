@@ -22,7 +22,7 @@ sections:
 
       - text: "<span class='blockquote'>Our brain is plastic, and we do not know it. We are completely ignorant of this dynamic, this organization, and this structure… Meanwhile, plasticity directly contradicts rigidity. It is its exact antonym. In ordinary speech, it designates suppleness, a faculty for adaptation, the ability to evolve. <span class='citation-num'>15</span></span>"
         citation:
-        - text:"Catherine, Malabou, What Should We Do With Our Brain? trans. Sebastian Rand (New York: Fordham University Press, 2009), 5."
+        - text:"<span class='citation-num'>15</span>Catherine, Malabou, What Should We Do With Our Brain? trans. Sebastian Rand (New York: Fordham University Press, 2009), 5."
 
       - text: "In its dynamic suppleness and adaptability, the brain demonstrates the quality of <span class='italic'>plasticity</span>. This refers to the incredible changeability of the synapses, the small gaps between the neurons, in response to stimuli. It refers to how neurons and neural connections can receive form and give form to alter their collective structure and function. <span class='italic'>Plasticity</span> is differentiated from <span class='italic'>rigidity</span>, which means to become immobile or static. "
 
@@ -30,7 +30,7 @@ sections:
 
       - text: "<span class='blockquote'>The concept of plasticity has an aesthetic dimension (sculpture, malleability), just as much as an ethical one (solicitude, treatment, help, repair, rescue) and a political one (responsibility in the double movement of the receiving and the giving for form). <span class='citation-num'>16</span></span>"
         citation:
-        - text:"Malabou, 30"
+        - text:"<span class='citation-num'>16</span> Malabou, 30"
 
       - text: "Malabou’s wide-ranging application of <span class='italic'>plasticity</span>as receiving and giving form offers an alternative framework for thinking about the social and political realms we inhabit. This is where we begin to see some connections between plasticity as manifest in our brains and in our shared lives. In particular, it sheds a light on how our complicity, or participation, in the dominant world systems of capitalism requires us to operate within the counter-paradigm of flexibility."
 
@@ -40,7 +40,7 @@ sections:
 
       - text: "<span class='blockquote'>We persist in thinking of the brain as a centralized, rigidified, mechanical organization, and of the mechanical itself as a brain reduced to the work of calculation. Perhaps, as I have said, this is because plasticity is precisely the form of our world and because we are so immersed in it, so constituted by it, that we experience it without either thinking it or being conscious of it. We do this to such an extent that we no longer see that it structures our lives and sketches a certain portrait of power. We find here the poetical and aesthetic force that is the fundamental, organizing attribute of plasticity: its power to configure the world. <span class='citation-num'>17</span></span>"
         citation:
-        - text:"<span class='citation-num'>12</span> Malabou, 39"
+        - text:" <span class='citation-num'>17</span> Malabou, 39"
 
       - text: "Is it possible to configure the world through computation? <span class='italic'>I’d answer yes, since computers are essentially a human invention</span>. Recall that Funes, like computers, had the curse of not forgetting and was rigid with memories such that he could not make or change his world. Can we combine our plasticity with the rigidities of computers to configure the world around us, specifically, by imagining poetic use of computer memory? Poetic computation can be a way of organizing digital memory, and thus configuring the world, for the way a set of information is configured is as important as the information itself.   "
 
@@ -55,17 +55,31 @@ sections:
 
       - text: "<span class='blockquote'>If computer memory is like anything, it is like erasable writing; but, if a penciled word can be erased because graphite is soft, a computer’s memory can be rewritten because its surface constantly fades.<span class='citation-num'>18</span></span>"
         citation:
-        - text:" Wendy Chun, 'The Enduring Ephemeral, or the Future is a Memory,' ADD PAGE NUMBER"
+        - text:" <span class='citation-num'>18</span> Wendy Chun, 'The Enduring Ephemeral, or the Future is a Memory,' ADD PAGE NUMBER"
 
       - text: "Computer memory (data) is a thing, an object. And it is subject to the same constraints of all physical objects. All computer memory is just electrical charges held momentarily in a complex weave of circuits. And all computer memory is stored on a physical hard disk or in the cloud, which also involves physical hardware. As Mimi Onuoha points out, “All data, from dutiful Facebook likes to iCloud selfies to every secret NSA database, is stored on a physical device somewhere.'<span class='citation-num'>19</span>"
         citation:
-        - text:"Mimi Onuoha, 'What It Takes To Truly Delete Data,' FiveThirtyEight, last modified Jan. 30, 2016, https://fivethirtyeight.com/features/what-it-takes-to-truly-delete-data/."
+        - text:" <span class='citation-num'>19</span> Mimi Onuoha, 'What It Takes To Truly Delete Data,' FiveThirtyEight, last modified Jan. 30, 2016, https://fivethirtyeight.com/features/what-it-takes-to-truly-delete-data/."
 
       - text: "Computer memory is often flawed and recalcitrant in that what you want to be permanent gets lost and what's supposed to be temporary sticks around forever. Because backups are not always reliable, and the possibility of losing data is always present, corporations have developed many solutions designed to produce profit (and some might argue to hold data hostage) to try to preserve one’s computer memory. In the final analysis, though, the life and death of data is often beyond our own control<span class='citation-num'>20</span>  "
         citations: 
-          - text: 'To try to assert our control over the permanent trace of our activity online, activists claim the “<a href="https://en.wikipedia.org/wiki/Right_to_be_forgotten">Right to be forgotten</a>.” It essentially claims that as free individuals, we should have the right to be forgotten through the agency of deciding how our computer memory will be shared online after our death, if at all.'
+          - text: <span class='citation-num'>20</span> To try to assert our control over the permanent trace of our activity online, activists claim the “<a href="https://en.wikipedia.org/wiki/Right_to_be_forgotten">Right to be forgotten</a>.” It essentially claims that as free individuals, we should have the right to be forgotten through the agency of deciding how our computer memory will be shared online after our death, if at all. 
 
       - text: "So instead of fixating on the durability of digital data, let’s focus on the complexities of computer memory, its fragility and its resilience, through an artistic vision. The poetic computation is about challenging what is possible within the constraints of computation. Instead of seeking more efficient ways of preserving computer memory, more interesting and urgent questions await us."
 
       - text: "What makes some computer memory more meaningful to us? How does computation affect the way we remember the past, live in the present and project the future? How can we use computation as a tool to understand how we think and remember? What are the emotional resonances with certain types of computer memory? What is the poetry that can be written through computer memory? What are the ethical responsibilities of creating computer memory? "
+
+
+
+  - title: "Bibliography" 
+    paragraphs:
+      - text: 'Borges, Jorge Luis. “Funes the Memorious.” Translated by Anthony Kerrigan. New York: Grove Weidenfeld, 1962.'
+      - text: 'Bush, Vannevar. “As We May Think.” Atlantic (July 1945). Accessed July 18, 2017. <a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/</a>.' 
+      - text: 'Chun, Wendy Hui Kyong. “The Enduring Ephemeral, or the Future is a Memory.” Critical Inquiry 35 (Autumn 2008).'  
+      - text: 'Malabou, Catherine. What Should We Do With Our Brain? Translated by Sebastian Rand. New York: Fordham University Press, 2009.'
+      - text: 'Nelson, Theodor Holm. “Xanalogical Structure, Needed Now More than Ever: Parallel Documents, Deep Links to Content, Deep Versioning and Deep Re-Use.” Project Xanadu and Keio University, ACM Computing Surveys 31(4), (December 1999).' 
+      - text: 'Onuoha, Mimi. “What It Takes To Truly Delete Data.” FiveThirtyEight. Last modified January 30, 2016. <a href="https://fivethirtyeight.com/features/what-it-takes-to-truly-delete-data/>https://fivethirtyeight.com/features/what-it-takes-to-truly-delete-data/</a>.'
+      - text: "Shannon, Claude E. “A Mathematical Theory of Communication.” The Bell System Technical Journal, vol. 27 (1948): 379-423, 623-656." 
+      - text: "Wiener, Norbert. Cybernetics: Or Control and Communication in the Animal and the Machine. Cambridge, Massachusetts: MIT Press, 1948."
+
 ---
