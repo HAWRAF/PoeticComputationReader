@@ -78,7 +78,8 @@ sections:
       - text: 'Chun, Wendy Hui Kyong. “The Enduring Ephemeral, or the Future is a Memory.” Critical Inquiry 35 (Autumn 2008).'  
       - text: 'Malabou, Catherine. What Should We Do With Our Brain? Translated by Sebastian Rand. New York: Fordham University Press, 2009.'
       - text: 'Nelson, Theodor Holm. “Xanalogical Structure, Needed Now More than Ever: Parallel Documents, Deep Links to Content, Deep Versioning and Deep Re-Use.” Project Xanadu and Keio University, ACM Computing Surveys 31(4), (December 1999).' 
-      - text: 'Onuoha, Mimi. “What It Takes To Truly Delete Data.” FiveThirtyEight. Last modified January 30, 2016. <a href="https://fivethirtyeight.com/features/what-it-takes-to-truly-delete-data/>https://fivethirtyeight.com/features/what-it-takes-to-truly-delete-data/</a>.'
+      - text: 'Onuoha, Mimi. “What It Takes To Truly Delete Data.” FiveThirtyEight. Last modified January 30, 2016. <a href="https://fivethirtyeight.com/features/what-it-takes-to-truly-delete-data/">https://fivethirtyeight.com/features/what-it-takes-to-truly-delete-data/</a>.'
+
       - text: "Shannon, Claude E. “A Mathematical Theory of Communication.” The Bell System Technical Journal, vol. 27 (1948): 379-423, 623-656." 
       - text: "Wiener, Norbert. Cybernetics: Or Control and Communication in the Animal and the Machine. Cambridge, Massachusetts: MIT Press, 1948."
 

@@ -48,7 +48,7 @@ sections:
 
       - text: "<span class='blockquote'>In the outside world, all forms of intelligence whether of sound or sight, have been reduced to the form of varying currents in an electric circuit in order that they may be transmitted. Inside the human frame exactly the same sort of process occurs.<span class='citation-num'>12</span></span>"
         citations: 
-          - text: "<span class='citation-num'>12</span> Vannevar Bush, “As We May Think."          
+          - text: <span class='citation-num'>12</span> Vannevar Bush, “As We May Think.”          
 
       - text: "In Bush’s narrative, he reduces all manifestations of intelligence (memory of some kind) to currents in an electrical circuit (storage of some kind), such that the ‘significance’ of these currents should be accessible and apparent. While this may be true to a degree for computers, this does not apply to the human brain.<span class='citation-num'>13</span></span>"
         citations:
@@ -65,7 +65,7 @@ sections:
 
       - text: "Jorge Luis Borges wrote “Funes the Memorious,” a story about meeting a man who had a terrible accident, and as a side effect, could remember everything.<span class='citation-num'>14</span> For a time this man was considered a genius because of his incredible long term memory. However, as time passed, he could not live his life because his mind was totally occupied by memories. His memory was driving him insane. For him to recall one day, it took another whole day because he would remember every detail of every experience. In a sense, he was cursed with an inability to forget. When Borges returns to him years later, he finds a man that has been defeated by the destructive nature of total memory. Because of it, he could not live or sleep, and it ended up destroying him. "
         citations: 
-          - text: "<span class='citation-num'>14</span> Jorge Luis Borges, 'Funes the Memorious,' trans. by Anthony Kerrigan (New York: Grove Weidenfeld, 1962)."
+          - text: "<span class='citation-num'>14</span> Jorge Luis Borges, ‘Funes the Memorious,’ trans. by Anthony Kerrigan (New York: Grove Weidenfeld, 1962)."
 
       - text: "We find a less ominous vision of this capacity to remember all things for all time in Bush’s Memex, which is essentially a memory machine. Bush suggested the information (records) in the Memex could attain a permanency not possible before, and that if it were stored on disk formats in an accessible way, we would be saved from the burden of having to remember since computers would do the labor. He further implied that attaining such control over information could give humans control over the environment and even the future."
 
