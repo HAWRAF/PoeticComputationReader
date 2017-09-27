@@ -22,6 +22,16 @@ twitter_username: tchoi8
 github_username:  tchoi8
 teaser: /assets/images/bookcover1.jpg
 
+
+  {% if page.image %}
+    <meta property="og:image" content="{{page.image}}" />
+    <meta name="twitter:image" content="{{page.image}}" />
+  {% else %}
+    <meta property="og:image" content="http://poeticcomputation.info/images/bookcover1.jpg" />
+    <meta name="twitter:image" content="http://poeticcomputation.info/images/bookcover1.jpg" />
+  {% endif %}
+
+
 # Build settings
 markdown: kramdown
 theme: minima
