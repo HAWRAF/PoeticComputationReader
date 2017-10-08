@@ -1,6 +1,6 @@
 ---
 title:  "Chapter Two Page 2"
-pdf: "/pdfs/chapterOne.pdf"
+pdf: "/pdfs/chapterThree.pdf"
 chapter: 2
 page: 2
 layout: fourohfour
@@ -8,7 +8,7 @@ active: true
 sections:
   - title: ""
     paragraphs:
-       
+
 
       - text: "Engelbart then demonstrates a dynamic map of his route from work to home with  various stops he needs to make, including the grocery store and library. When he points at the library with his mouse, it links to information about books that are overdue. And when he points at the drugstore, it links to items to pick up there. Prior to Engelbart, there wasn’t this sense in the mainstream imagination of the screen as a space with an X-Y axis that one could navigate as if it were a real map."
         inlineImage:
@@ -16,7 +16,7 @@ sections:
             caption: "“Hypermedia route from work to home, labels hotlinked”: Via @ <a href='http://www.dougengelbart.org/firsts/dougs-1968-demo-detailed-outline.html'>Doug Engelbart</a>"
 
       - text: "What may seem so familiar now were radical functionalities at that time<span class='citation-num'>8</span>. Engelbart’s interpretation of “trails” with hot linked connections allowed for hierarchical organization as well as dynamic engagement with the screen (via map-like structures). This demo had a decisive influence on how future generations approached computer memory, namely, using hierarchy as the basic organizing principle. To this day, we continue to think of computer memory as data residing in files and folders, folders inside of folders, which is evident in the visual metaphor of manila folders in contemporary operating systems. "
-        citations: 
+        citations:
           - text: "<span class='citation-num'>8</span>I have entities of all sorts that I can say, I want to do operations on, and this basic structure that I can move over and study and get about very quickly. That’s the essence of the tool we have.- Excerpt from transcript of demo: <a href='http://dougengelbart.org/pubs/video/fjcc68/Englebart's-1968-Transcription.html'>http://dougengelbart.org/pubs/video/fjcc68/Englebart's-1968-Transcription.html</a>."
         inlineImage:
           - src: "chapter-2/image2.png"
@@ -27,19 +27,19 @@ sections:
           - text: "<span class='citation-num'>9</span>Minority Report tells a disturbingly familiar tale of a dystopian future that centers on patriarchal protagonists and their quest for a control so complete that even memory (and the temporality embedded therein) is subject to their actions. This kind of narrative appeals to Hollywood film audiences because of their fixation with technology (what can’t technology do?) and the fantasy that technology can grant ultimate mastery over their own bodies, those around them, and the shape of their lives. These kinds of narratives are common in technology product demos, like Apple product launches, where the general message is how the new device will empower you. Whether in the realm of consumerism or in the more fantastic (sci-fi) iterations of entertainment, these narratives shape how we think about and use technology products. "
 
       - text: "To this day, many contemporary technologies have a direct connection to the Memex machine as its basic principle of “trails” are integrated into smartphones, self tracking devices and social media. We’ve learned to harness the computational power of these applications and devices to help us remember and communicate. However, the Memex presented only one vision of computers and is not without its shortcomings.<span class='citation-num'>10</span>"
-        citations: 
+        citations:
           - text: "<span class='citation-num'>10</span>The Memex presents the vision of a computer as an encyclopedia of knowledge, as a giant archive machine. However, other visions were possible such as computers as a tool for communication and for automation (cybernetics)."
 
       - text: "Bush invented the Memex to aid humans who are incapable of indexing large quantities of information. However, in designing the means for humans to access information efficiently, Bush promoted a simplified vision of how human memory operates. He assumed that the act of <span class ='italic'> accessing </span> the missing information was commensurate with <span class='italic'>understanding</span> it. Wendy Chun critiques this in her essay, “The Enduring Ephemeral, or the Future Is a Memory”"
 
       - text: "<span class='blockquote'>In Bush’s writing, and in prognoses for the information revolution more generally, there is no difference between access to and understanding the record, between what would be called, perhaps symptomatically, machine reading and human reading and comprehension, between information and argument. The difficulty supposedly lies in selecting the data, not in reading it, for it is assumed that reading is a trivial act, a simple comprehension of the record’s content. Once the proper record is selected, there is no misreading, no misunderstanding, only transparent information.<span class='citation-num'>11</span></span>"
-        citations: 
+        citations:
           - text: "<span class='citation-num'>11</span>Wendy Hui Kyong Chun, “The Enduring Ephemeral, or the Future is a Memory,” Critical Inquiry 35 (Autumn 2008)."
 
       - text: "Chun argues that accessing some information does not necessarily mean understanding it. Reading does not necessarily lead to comprehension. And most importantly, information is useless without an argument to provide context to make it meaningful. "
 
       - text: "<span class='blockquote'>Access ≠ Understanding </span>"
-      
+
       - text: "<span class='blockquote'>Reading ≠ Comprehension </span>"
 
       - text: "<span class='blockquote'>Information ≠ Argument</span>"
@@ -47,7 +47,7 @@ sections:
       - text: "Unlike Bush, Chun does not take understanding for granted because as humans, understanding is always relational, always contextual. We remember certain information by finding arguments around it, creating contexts for comprehension, and through repetition, we come to understand the information. Bush, on the other hand, makes a deterministic assumption about how the human brain operates:"
 
       - text: "<span class='blockquote'>In the outside world, all forms of intelligence whether of sound or sight, have been reduced to the form of varying currents in an electric circuit in order that they may be transmitted. Inside the human frame exactly the same sort of process occurs.<span class='citation-num'>12</span></span>"
-        citations: 
+        citations:
           - text: <span class='citation-num'>12</span> Vannevar Bush, “As We May Think.”          
 
       - text: "In Bush’s narrative, he reduces all manifestations of intelligence (memory of some kind) to currents in an electrical circuit (storage of some kind), such that the ‘significance’ of these currents should be accessible and apparent. While this may be true to a degree for computers, this does not apply to the human brain.<span class='citation-num'>13</span></span>"
@@ -64,7 +64,7 @@ sections:
             caption: "'Funes the Memorious' (1942): Via @ <a href='https://www.pinterest.com/pin/464011567832091656/'>Pinterest</a>"
 
       - text: "Jorge Luis Borges wrote “Funes the Memorious,” a story about meeting a man who had a terrible accident, and as a side effect, could remember everything.<span class='citation-num'>14</span> For a time this man was considered a genius because of his incredible long term memory. However, as time passed, he could not live his life because his mind was totally occupied by memories. His memory was driving him insane. For him to recall one day, it took another whole day because he would remember every detail of every experience. In a sense, he was cursed with an inability to forget. When Borges returns to him years later, he finds a man that has been defeated by the destructive nature of total memory. Because of it, he could not live or sleep, and it ended up destroying him. "
-        citations: 
+        citations:
           - text: "<span class='citation-num'>14</span> Jorge Luis Borges, ‘Funes the Memorious,’ trans. by Anthony Kerrigan (New York: Grove Weidenfeld, 1962)."
 
       - text: "We find a less ominous vision of this capacity to remember all things for all time in Bush’s Memex, which is essentially a memory machine. Bush suggested the information (records) in the Memex could attain a permanency not possible before, and that if it were stored on disk formats in an accessible way, we would be saved from the burden of having to remember since computers would do the labor. He further implied that attaining such control over information could give humans control over the environment and even the future."
