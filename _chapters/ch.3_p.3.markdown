@@ -9,9 +9,29 @@ active: true
 sections:
   - title: "New weapon"
     paragraphs:
-      - text: "So this is the question for today: what is the New Weapon? It is a two-fold question: what new weapon governs us? and what new weapon do we have to protect ourselves? We’ve been discussing the first part of this question concerning the existing and emerging technologies and techniques of control. But I’d like to turn now to how we might subvert these technologies. How can we use the tools of surveillance to subvert the power structure? Two approaches come to mind: counter-surveillance and obfuscation. Counter-surveillance is appropriating the technology of surveillance to empower individuals and protect their privacy. For example, Steve Mann created <a href='http://wearcam.org/' target='_blank'>wearable devices</a> that are designed to conceal individual’s identity and can also be used to stare back at the surveillance camera. Surya Mattu created <a href='https://github.com/samatt/NSHey' target='_blank'>NSHEYYY</a> which sniffs out the wireless network of nearby devices, and makes private information about the device (such as its history of logging into certain wireless networks) available and visible. NSHEYYY uses the same protocols that are used by the wireless providers and advertising companies, but instead of exploiting data for profit, it makes the data available for its users. Another approach is obfuscation in which so much data is intentionally given to the point that the data becomes meaningless. <a href='https://adnauseam.io'>Adnaseum</a> is a web browser extension that tricks google chrome to think the user is clicking all the advertisements. It’s “a free browser extension designed to obfuscate browsing data and protect users from tracking by advertising networks.”<span class='citation-num'>9</span> Projects like these make it possible for someone like us to have an active engagement with technology as opposed to merely being subject to it."
+      - text: " "
+        inlineImage:
+         - src: "chapter-3/feedback.jpg"
+      - text: "So this is the question for today: what is the New Weapon? It is a two-fold question: what new weapon governs us? and what new weapon do we have to protect ourselves? We’ve been discussing the first part of this question concerning the existing and emerging technologies and techniques of control. But I’d like to turn now to how we might subvert these technologies. How can we use the tools of surveillance to subvert the power structure? Two approaches come to mind: counter-surveillance and obfuscation. Counter-surveillance is appropriating the technology of surveillance to empower individuals and protect their privacy. For example, Steve Mann created <a href='http://wearcam.org/' target='_blank'>wearable devices</a><span class='citation-num'>12</span> that are designed to conceal individual’s identity and can also be used to stare back at the surveillance camera."
         citations:
-          - text: "<span class='citation-num'>9</span> As of January 2017, Google has banned this extension."
+        image:
+        - src: "chapter-3/surveillance-study-on-film-36-exposures-640x480.gif"
+          caption: "<span class='citation-num'>12</span><a href='http://wearcam.org/surveillancestudy-36exposures/'>Surveillance Study -- 36 Exposures </a>"
+
+
+      - text: "Surya Mattu created <a href='https://github.com/samatt/NSHey' target='_blank'>NSHEYYY</a> which sniffs out the wireless network of nearby devices, and makes private information about the device (such as its history of logging into certain wireless networks) available and visible.<span class='citation-num'>13</span> NSHEYYY uses the same protocols that are used by the wireless providers and advertising companies, but instead of exploiting data for profit, it makes the data available for its users."
+        citations:
+        image:
+        - src: "chapter-3/nsheyyy.gif"
+          caption: "<span class='citation-num'>13</span>Jen Kagan, <a href='https://medium.com/@kenjagan/packet-sniffing-in-the-subway-b84eb31d6178'>Packet Sniffing in the Subway</a>, 3,28, 2016"
+
+      - text: "Another approach is obfuscation in which so much data is intentionally given to the point that the data becomes meaningless. <a href='https://adnauseam.io'>Adnaseum</a> is a web browser extension that tricks google chrome to think the user is clicking all the advertisements<span class='citation-num'>14</span>. Created by Daniel C. Howe, Mushon Zer-Avov. and Helen Nissenbaum, it’s “a free browser extension designed to obfuscate browsing data and protect users from tracking by advertising networks.”<span class='citation-num'>9</span> Projects like these make it possible for someone like us to have an active engagement with technology as opposed to merely being subject to it."
+        citations:
+        image:
+        - src: "chapter-3/adnauseam.png"
+          caption: "<span class='citation-num'>14</span><a href='https://vimeo.com/111943439'>AdNauseam - Clicking Ads So You Don’t Have To</a>"
+
+
 
 
 
@@ -29,9 +49,16 @@ sections:
 
       - text: "Student 2: When these conversations arise, I think about how we live our lives in the constant, vast systems of surveillance and control that really dictate what we can do and are monitoring us all the time. But once they are in place it’s really hard to make them go away, right? Like once the infrastructure of PRISM is in place, it’s very hard to say, oh let’s just shut it all down. I feel like it is more of a question of whether it’s possible to backtrack or deconstruct these things."
 
-      - text: "Francis: One project that I’d connect that to is Project Cybersyn. Salvador Allende, a democratically elected Socialist president in Chile in the 60s, started Cybersyn in a bid to create a cybernetically planned economy. And this was back when Chile literally had five computers, and IBM refused to sell them stuff because they were afraid Allende would nationalize their company. But this cybernetic network, created to manage the economy democratically, would actually rely on infrastructure that some might view as part of mass surveillance. So that’s one possible route for trying to leverage these technologies in a more progressive direction, but it’s obviously fraught with issues."
+      - text: "Francis: One project that I’d connect that to is Project Cybersyn.<span class='citation-num'>15</span> Salvador Allende, a democratically elected Socialist president in Chile in the 60s, started Cybersyn in a bid to create a cybernetically planned economy. And this was back when Chile literally had five computers, and IBM refused to sell them stuff because they were afraid Allende would nationalize their company. But this cybernetic network, created to manage the economy democratically, would actually rely on infrastructure that some might view as part of mass surveillance. So that’s one possible route for trying to leverage these technologies in a more progressive direction, but it’s obviously fraught with issues."
+
+        citations:
+        image:
+        - src: "chapter-3/cybersyn-room.jpg"
+          caption: "<span class='citation-num'>53</span>Rob Meyers, <a href='http://avant.org/project/art-of-management/'>The Art of Management</a>, Avant.org, 2015"
 
       - text: "I also think of the “Reconfiguration Thesis,” something similar to what is discussed in logistics and supply chain management. For example, Walmart, Amazon and all these large corporations have very sophisticated ways of managing raw materials flows, production and restocking. The reconfiguration thesis for our context asks if can we take these technologies that are geared toward this globalized capitalist production and use it towards socially progressive ends. So, yeah, I think we can ask a similar question about whether surveillance infrastructure can be used in a different way."
+        inlineImage:
+          - src: "chapter-3/sabotage.jpg"
 
   - title: "End note"
     paragraphs:
@@ -40,9 +67,18 @@ sections:
         citations:
           -text: "Alexander R Galloway, Laruelle: Against the Digital. United States: University of Minnesota  Press, 2014, 109"
       - text: 'Perhaps we can begin by registering the many realities in existence, from virtual, augmented to parallel ones, some more real than the others. Perhaps we can find common ground between these realities in order to situate ourselves in a critically informed vision of history and the future.'
+        inlineImage:
+          - src: "/chapter-3/fold.jpg"
       - text: 'In this oscillation of realities, there may be an opportunity to connect with the past and “rescue history” as Galloway suggests. In this turn to active life, perhaps we can create the spaces for unmonitored everyday life. As artists and critical makers, we can avoid replicating the systems of control in an artwork, and instead, reveal the complexities within in it. Instead of celebrating possible uses of technology, we can ask: what is the world we want to live in?'
+        citations:
+        image:
+        - src: "chapter-3/snakeatm.jpg"
+          caption: "Student project: <a href='https://www.youtube.com/watch?v=v5leQVoQyss'>SFPC Bank</a>, Melanie Hoff, 2016"
 
-      - text: 'Lecture date: June 15, 2016 at the School for Poetic Computation, New York City.'
+
+      - text: "Lecture date: June, 2016 at the School for Poetic Computation, New York City with Brandon Liu, Carmen Aguilar y Wedge, Elite Kedan, Guhong Min, Helene Martin, Jonathan Leung, Krista Nordgren, Max Fowler, Meina Kalayeh, Matt Visco, Melanie Hoff, Nahee Kim, Oren Shoham and October, 2015 with Alex Tolar, Andy Dayton, Becca Moore, Brian Solon, Chris Anderson, Michael Simpson, Robby Kraft, Roy Macdonald, Sarah Howorka, Yeseul Song, Yosuke Sakai. I'd like to thanks the students who participated in the discussion and the special guest."
+        inlineImage:
+          - src: "/chapter-3/dark.jpg"
 
 
 
