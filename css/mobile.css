@@ -1,9 +1,13 @@
-/* 
+/*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 850px) {
-    	/* temp reference display none*/
+
+  .lines-left{
+  display: none;
+	}
+			/* temp reference display none*/
 	.reference, .alt-wrapper {
 		display: none;
 	}
@@ -86,7 +90,7 @@
 		word-wrap: break-word;
 		hyphens: auto;
 	}
-	.bookmark-modal { 
+	.bookmark-modal {
 		width: 260px;
 	 }
 	.bookmark-go, .bookmark-stay {
@@ -142,7 +146,7 @@
     pointer-events: all;
 	}
 	.reference a {
-		     border-bottom: 1px solid #000; 
+		     border-bottom: 1px solid #000;
      pointer-events: all
 	}
 
@@ -198,12 +202,17 @@
 	}
 }
 
-/* 
+/*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
   	/* temp reference display none*/
+
+
+		.lines-left{
+		display: none;
+		}
 	.reference, .alt-wrapper {
 		display: none;
 	}
@@ -286,7 +295,7 @@
 		word-wrap: break-word;
 		hyphens: auto;
 	}
-	.bookmark-modal { 
+	.bookmark-modal {
 		width: 260px;
 	 }
 	.bookmark-go, .bookmark-stay {
@@ -342,7 +351,7 @@
     pointer-events: all;
 	}
 	.reference a {
-		     border-bottom: 1px solid #000; 
+		     border-bottom: 1px solid #000;
      pointer-events: all
 	}
 
@@ -396,16 +405,18 @@
 	.citation, .alt-body-text {
 	  border: none !important;
 	}
-  
+
 }
 
-/* 
+/*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 @media (max-width: 767px) {
 
-
+	.lines-left{
+  display: none;
+	}
 	/* temp reference display none*/
 	.reference, .alt-wrapper {
 		display: none;
@@ -489,7 +500,7 @@
 		word-wrap: break-word;
 		hyphens: auto;
 	}
-	.bookmark-modal { 
+	.bookmark-modal {
 		width: 260px;
 	 }
 	.bookmark-go, .bookmark-stay {
@@ -545,7 +556,7 @@
     pointer-events: all;
 	}
 	.reference a {
-		     border-bottom: 1px solid #000; 
+		     border-bottom: 1px solid #000;
      pointer-events: all
 	}
 
