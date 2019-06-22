@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 {% include head.html %}
@@ -11,11 +12,21 @@
         <div class="main">
 
          <div class="introduction">
-         	<h1 class="chapter-heading">Poetics of Computation</h1>
-         	<p class="body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum illum, perferendis, voluptas quibusdam nulla odio dolor ad culpa iusto fugit quae, magnam porro deleniti voluptate tenetur ipsa. Eum, error, officiis.</p>
-         	<h3 class="sub-title">Written by Taeyoon Choi</h3>
-         	<!-- <h3 class="sub-title">Edited by John Hancock</h3> -->
-         	<h3 class="sub-title">Designed by HAWRAF</h3>
+         	<h1 class="chapter-heading">Poetic Computation</h1>
+         	<p class="body-text"><span class="italic">Poetic Computation: Reader</span> is an online-book by Taeyoon Choi that discusses code as a form of poetry and aesthetic while raising ethical questions associated with it. The book is based on Choi’s lectures at the <a href="http://sfpc.io" class="underline"> School for Poetic Computation</a>,  an independent school he co-founded in New York City. The first two chapters will be published in September 2017, with the following chapters to be published over the year. </p>
+           
+
+            <p class="body-text">Designed by HAWRAF, <span class="italic">Poetic Computation: Reader</span> presents new possibilities for enhanced accessibility and legibility in web browsers. Readers can change the design elements and format parameters to create their ideal reading experience. <span class="italic">Poetic Computation: Reader</span> is edited by Hannah Son and includes interviews with a select group of scholars and practitioners.   </p>
+         	<h3 class="sub-title">Written by <a href="http://taeyoonchoi.com" class="underline">Taeyoon Choi</a></h3>
+         	<h3 class="sub-title">Edited by Hannah Son</h3>
+         	<h3 class="sub-title">Designed by <a href="http://hawraf.com" class="underline">HAWRAF</a></h3>
+
+         	<p class="body-text">Poetic Computation: Reader is a free educational product with its code published open source in the <a href="http://github.com/HAWRAF/PoeticComputationReader" class="underline"> project repository</a>. The project was initially supported by Taeyoon Choi's Artist in Residence at <a href="http://newinc.org" class="underline">NEW INC</a>. For updates on the monthly chapter releases, please sign up to Taeyoon Choi's <a href="http://tinyletter.com/tchoi8" class="underline">mailing list</a>. For press release and visual assets, please check out this <a href="bit.ly/poeticlaunch" class="underline">link</a>.</p>  
+
+         	<p class="body-text">Taeyoon Choi and collaborators do not hold the copyright to images contained in this book except for the original images created by Choi. If there's a concern about the use of any image or citation, please contact taeyoon@sfpc.io</p>
+
+         	
+
          </div>
          <div class="export-highlights-wrapper">         	
          		<p class="export-cta">You can export all of your highlights as a pdf.</p>
@@ -30,10 +41,10 @@
             {% if chapter.page == 1 and chapter.active == true %}
 
 	            <div class="chapter-title-wrapper">
-	            	<h1 class="sub-title">Chapt. 0{{ chapter.chapter }}</h1>
+	            	<h1 class="sub-title" >Chapt. 0{{ chapter.chapter }}</h1>
 	            	<div class="chapter-title-line"></div>
-	            	<a href="{{chapter.url}}" >
-		            	<h1 class="chapter-heading">{{chapter.title}}</h1>
+	            	<a href="{{chapter.url}}" > 
+		            	<h1 class="chapter-heading" >{{chapter.title}}</h1>
 	            	</a>
 	           		<p class="body-text">{{chapter.summary}}</p>
 	           		<div class="group">
@@ -71,11 +82,9 @@
 	<script src="/scripts/storage.js"></script>
   <script>
 	  var storage = Storages.localStorage
-
 		$('a.nav-link').click(function(ev) {
 			ev.preventDefault();
 			storage.set('settings.fromNav', true);
-
 			window.location.href = $(ev.delegateTarget).attr("href")
 		})
   </script>
@@ -84,10 +93,8 @@
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
 	  ga('create', 'UA-106808749-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
 </body>
 </html>

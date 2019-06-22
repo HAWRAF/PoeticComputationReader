@@ -13,16 +13,24 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: "Poetic Computation: Reader"
+email: taeyoon@sfpc.io
+description: "Poetic Computation: Reader is an online-book by Taeyoon Choi that discusses code as a form of poetry and aesthetic while raising ethical questions associated with it. The book is based on Choi’s lectures at the School for Poetic Computation, an independent school he co-founded in New York City. The first two chapters will be published in September 2017, with the following chapters to be published over the year. Designed by HAWRAF, Poetic Computation: Reader presents new possibilities for enhanced accessibility and legibility in web browsers. Readers can change the design elements and format parameters to create their ideal reading experience. Poetic Computation: Reader is edited by Hannah Son and includes interviews with a select group of scholars and practitioners."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: http://poeticcomputation.info # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: tchoi8
+github_username:  tchoi8
+teaser: /assets/images/bookcover1.jpg
+
+
+  {% if page.image %}
+    <meta property="og:image" content="{{page.image}}" />
+    <meta name="twitter:image" content="{{page.image}}" />
+  {% else %}
+    <meta property="og:image" content="http://poeticcomputation.info/images/bookcover1.jpg" />
+    <meta name="twitter:image" content="http://poeticcomputation.info/images/bookcover1.jpg" />
+  {% endif %}
+
 
 # Build settings
 markdown: kramdown
